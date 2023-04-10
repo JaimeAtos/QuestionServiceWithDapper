@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "XV2AqRjYoJFgtFs2LErfJjOiU5DFgdrzHrtx+4//dsM+LxhqxUVPPSHSf4fIqw8YuCMA8kza7JbBiM+qe9UXTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\a875671\\source\\repos\\PositionService\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\a875671\\.nuget\\packages\\upgrade.microservice.sdk.core\\1.0.28\\upgrade.microservice.sdk.core.1.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}

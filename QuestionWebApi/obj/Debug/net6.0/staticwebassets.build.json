@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CYaZjWPao7yTcGEB9HkqlyyxiHbgbunWKHCbmyn2Y50=",
+  "Source": "QuestionWebApi",
+  "BasePath": "_content/QuestionWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

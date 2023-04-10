@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Atos.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Atos.Core.Abstractions.IBase">
+            <summary>
+            Define la estructura base para las entidades y dto y tipos genericos
+            </summary>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IBase`2">
+            <summary>
+            Define la estructura base para las entidades y dto
+            </summary>
+            <typeparam name="TKey">Tipo de dato que identificara el registro</typeparam>
+            <typeparam name="TUserKey">Tipo de datos que identificara el usuario</typeparam>
+        </member>
+        <member name="P:Atos.Core.Abstractions.IBase`2.Id">
+            <summary>
+            Id del registro
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Abstractions.IBase`2.State">
+            <summary>
+            Estado del registro
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Abstractions.IBase`2.UserCreatorId">
+            <summary>
+            Id del usuario que creo el registro
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Abstractions.IBase`2.CreatedDate">
+            <summary>
+            Fecha de creación del registro
+            </summary>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IDtoBase">
+            <summary>
+            Definición para las entidades base y restricción para tipos genericos
+            </summary>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IDtoBase`2">
+            <summary>
+            Definición para las entidades base
+            </summary>
+            <typeparam name="TKey">Tipo de dato que identificara el registro</typeparam>
+            <typeparam name="TUserKey">Tipo de datos que identificara el usuario</typeparam>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IDtoInteger`1">
+            <summary>
+            Definición para los data transfer object de tipo int
+            </summary>
+            <typeparam name="TUserKey">Tipo que identificara el usuario</typeparam>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IDtoLong`1">
+            <summary>
+            Definición para los data transfer object de tipo long
+            </summary>
+            <typeparam name="TUserKey">Tipo que identificara el usuario.</typeparam>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IEntityBase">
+            <summary>
+            Definición para las entidades base del patron de repositorio y restricciones de tipos genericos
+            </summary>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IEntityBase`2">
+            <summary>
+            Definición para las entidades base del patron de repositorio
+            </summary>
+            <typeparam name="TKey">Tipo de dato que identificara el registro</typeparam>
+            <typeparam name="TUserKey">Tipo de datos que identificara el usuario</typeparam>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IEntityBaseAuditable`2">
+            <summary>
+            Definición para las entidades base del patron de repositorio
+            </summary>
+            <typeparam name="TKey">Tipo de dato que identificara el registro</typeparam>
+            <typeparam name="TUserKey">Tipo de datos que identificara el usuario</typeparam>
+        </member>
+        <member name="P:Atos.Core.Abstractions.IEntityBaseAuditable`2.UserModifierId">
+            <summary>
+            Id del usuario que creo el registro
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Abstractions.IEntityBaseAuditable`2.DateLastModify">
+            <summary>
+            Fecha de creación del registro
+            </summary>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IEntityInteger`1">
+            <summary>
+            Definición para las entidades del patron de repositorio
+            </summary>
+            <typeparam name="TUserKey">Tipo que identificara el usuario</typeparam>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IEntityLong`1">
+            <summary>
+            Definición para las entidades del patron de repositorio
+            </summary>
+            <typeparam name="TUserKey">Tipo que identificara el usuario</typeparam>
+        </member>
+        <member name="T:Atos.Core.Abstractions.IStartupServices">
+            <summary>
+            Especificación del contrato para la administración de servicios personalizados en el SDK Atos.Microservices
+            </summary>
+        </member>
+        <member name="M:Atos.Core.Abstractions.IStartupServices.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Este metodo es invocado por el SDK Atos.Microservices en el momento de iniciar la aplicación para registrar servicios personalizados.
+            </summary>
+            <param name="services">Provee acceso al contenedor de dependencias de .net core</param>
+            <param name="configuration">Provee acceso a las diferentes fuentes de configuración</param>
+        </member>
+        <member name="T:Atos.Core.Commons.EntityBase`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TUserKey"></typeparam>
+        </member>
+        <member name="T:Atos.Core.Commons.Persona`2">
+            <summary>
+            Base clase to create a person
+            </summary>
+        </member>
+        <member name="T:Atos.Core.EventsDTO.CalalogSalarySchemeChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CalalogSalarySchemeChanged.SalarySchemeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CalalogSalarySchemeChanged.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Atos.Core.EventsDTO.CatalogCityChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogCityChanged.CityId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogCityChanged.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogCityChanged.ContryId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Atos.Core.EventsDTO.CatalogCountryChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogCountryChanged.CoutryId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogCountryChanged.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogLevelChanged.LevelId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogLevelChanged.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Atos.Core.EventsDTO.CatalogLocationChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogLocationChanged.LocationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogLocationChanged.CityId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogLocationChanged.CityDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogLocationChanged.CountryId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogLocationChanged.CountryDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Atos.Core.EventsDTO.CatalogStateChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogStateChanged.CatalogId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Atos.Core.EventsDTO.CatalogStateChanged.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Atos.Core.Models.Pager.Pager`1">
+            <summary>
+            Pagina los datos de un IQueryable.
+            </summary>
+            <remarks>https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet</remarks>
+            <typeparam name="T">Tipo de datos a retornar en el objeto </typeparam>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.TotalItems">
+            <summary>
+            Gets the total items
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.CurrentPage">
+            <summary>
+            Gets the current page
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.PageSize">
+            <summary>
+            Gets the page size
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.TotalPages">
+            <summary>
+            Gets the total pages
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.StartPage">
+            <summary>
+            Gets the start page
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.EndPage">
+            <summary>
+            Gets the end page
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.StartIndex">
+            <summary>
+            Gets the start index
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.EndIndex">
+            <summary>
+            Gets the end index
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.Pages">
+            <summary>
+            Gets the pages
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Pager`1.Data">
+            <summary>
+            Gets the data
+            </summary>
+        </member>
+        <member name="M:Atos.Core.Models.Pager.Pager`1.#ctor(System.Int32,System.Collections.Generic.List{`0},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Crea una nueva instancia de Pager
+            </summary>
+            <param name="totalItems">Asigna el total de elemento a retornar</param>
+            <param name="currentPage">Pagina actual</param>
+            <param name="pageSize">Numero de registros por pagina</param>
+            <param name="maxPages">Numero de paginas</param>
+            <param name="data">Información de la paginación</param>
+        </member>
+        <member name="T:Atos.Core.Models.Pager.Parameters">
+            <summary>
+            Modelo que permitira obtener los datos de la petición para paginar los datos.
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Parameters.CurrentPage">
+            <summary>
+            Pagina actual
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Parameters.PageSize">
+            <summary>
+            Numero de registros en la pagina
+            </summary>
+        </member>
+        <member name="P:Atos.Core.Models.Pager.Parameters.MaxPage">
+            <summary>
+            Numero de paginas maximas
+            </summary>
+        </member>
+    </members>
+</doc>
